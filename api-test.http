@@ -1,0 +1,11 @@
+@BigBoxStore = database
+
+@GroceryInventory = collection
+
+@domain = http://localhost
+
+@port = 3000
+
+###
+GET {{domain}}:{{port}}:{{BigBoxStore}}:{{GroceryInventory}}
+Content-Type: application/json

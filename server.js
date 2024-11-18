@@ -144,7 +144,7 @@ app.delete('/delete/:database/:collection/:id', async (req, res) => {
         // Find and delete the document by id
         const deletedDocument = Model.findByIdAndDelete(id)
         // If document not found, return 404 status code with error message
-        if (!updatedDocument) {
+        if (!deletedDocument) {
             res.status(404).json({message:"Document not found"})
         }
         // Log success message to the console
